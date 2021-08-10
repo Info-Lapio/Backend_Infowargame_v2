@@ -3,10 +3,11 @@ import { EventModule } from './event/event.module';
 import { NoticeModule } from './notice/notice.module';
 import { ProblemModule } from './problem/problem.module';
 import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [EventModule, NoticeModule, ProblemModule],
   controllers: [AppController],
-  providers: [],
+  providers: [AppService],
 })
 export class AppModule {}
