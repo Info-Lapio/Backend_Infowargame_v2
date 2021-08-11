@@ -11,7 +11,6 @@ node {
                 sh(script: 'yarn test')
             }
             stage('Push') { 
-                git 
             } 
             stage('Deploy') { 
                
