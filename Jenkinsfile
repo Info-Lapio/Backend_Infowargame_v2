@@ -5,7 +5,7 @@ node {
                 git 'https://github.com/Info-Lapio/Backend_Infowargame_v2.git' 
             } 
             stage('Build') { 
-                sh(script: 'yarn && yarn build && yarn start')
+                sh(script: 'yarn && yarn build')
             } 
             stage('Unit Test') { 
                 sh(script: 'yarn test')
