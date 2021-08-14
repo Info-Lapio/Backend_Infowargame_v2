@@ -10,10 +10,8 @@ node {
             stage('Unit Test') { 
                 sh(script: 'yarn test')
             }
-            stage('Push') { 
-            } 
             stage('Deploy') { 
-               
+               sh(script: 'pm2 start yarn --interpreter bash --name InfoWargame -- start')
             } 
         } 
     
