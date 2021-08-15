@@ -7,4 +7,8 @@ export class AppService {
     this.logger.log("[Log] Testing Server...");
     return 'Hello World!';
   }
+
+  uploadFile(file: Express.Multer.File): string {
+    return file.filename;
+  }
 }
